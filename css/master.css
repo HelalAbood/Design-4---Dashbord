@@ -1,0 +1,85 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;  
+}
+body { 
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+a { 
+    text-decoration: none;
+}
+ul { 
+    list-style: none;
+    padding: 0;
+}
+/* End Global Rules */
+/* Start sidebar */
+.page { 
+    background-color: #cfcfcc65;
+}
+.page .sidebar { 
+    width: 220px;
+    box-shadow: 0 0 10px #ddd;
+    min-height: 100vh;
+}
+@media (max-width: 767px) {
+    .page .sidebar {
+        width: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .page .sidebar h3 {
+        font-size: 8px;
+        margin-left: -10px;
+        margin-bottom: 6px;
+    }
+    .page .sidebar h3::before,
+    .page .sidebar h3::after,
+    .page .sidebar ul li a span { 
+        display: none;
+    }
+    .page .sidebar h6 {
+        font-size: 4px;
+    }
+    .page .sidebar li { 
+        width: 30%;
+    }
+}
+.page .sidebar h3::before { 
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -15px;
+    height: 5px;
+    left: 0;
+    background-color: black;
+}
+.page .sidebar h3::after { 
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -20px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: white;
+    border: 2px black solid;
+}
+.page .sidebar h6 a:hover { 
+    color: blue;
+    text-decoration: underline;
+}
+.page .sidebar li a:hover,
+.page .sidebar li a.active {
+    background-color: #cfcfcc65;
+}
+.page .sidebar li a:hover span { 
+    text-decoration: underline;
+    color: blue;
+}
+/* End sidebar */

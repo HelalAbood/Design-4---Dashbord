@@ -1,0 +1,96 @@
+
+
+/* Start Box */
+.d-flex { 
+    display: flex;
+}
+.align-center { 
+    align-items: center;
+}
+/* End Box */
+
+
+
+/* Start Padding and Margin */
+.p-10 { 
+    padding: 10px;
+}
+.p-20 { 
+    padding: 20px;
+}
+.m-10 { 
+    margin: 10px;
+}
+.m-20 { 
+    margin: 20px;
+}
+.mt-0 { 
+    margin-top: 0;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-0 { 
+    margin-bottom: 0;
+}
+.mb-20 { 
+    margin-bottom: 20px;
+}
+/* End Padding and Margin */
+
+/* Start font */
+.txt-c { 
+    text-align: center;
+}
+.fs-14 { 
+    font-size: 14px;
+}
+.fs-12 { 
+    font-size: 12px;
+}
+.fs-10 { 
+    font-size: 10px;
+}
+.fs-8 { 
+    font-size: 8px;
+}
+/* End font */
+
+
+/* Start position */
+.p-relative { 
+    position: relative;
+}
+/* End position */
+
+
+/* Start bordar */
+.rad-6 { 
+    border-radius: 6px;
+}
+.rad-50 { 
+    border-radius: 50%;
+}
+/* End bordar */
+
+
+/* Start Background */
+.c-black { 
+    color: black;
+}
+.c-white { 
+    color: white;
+}
+.c-red { 
+    color: red;
+}
+.bg-black { 
+    background-color: black;
+}
+.bg-white { 
+    background-color: white;
+}
+.bg-red { 
+    background-color: red;
+}
+/* End Background */
