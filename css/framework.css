@@ -7,16 +7,45 @@
 .align-center { 
     align-items: center;
 }
+
 /* End Box */
 
+/* Start compon */
+.between-flex { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* End compon */
 
+:root { 
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --gray-color: #888;
+}
+
+.cur-pointer { 
+    cursor: pointer;
+}
 
 /* Start Padding and Margin */
 .p-10 { 
     padding: 10px;
 }
+.p-15 { 
+    padding: 15px;
+}
 .p-20 { 
     padding: 20px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+.pr-15 {
+    padding-right: 15px;
 }
 .m-10 { 
     margin: 10px;
@@ -26,6 +55,9 @@
 }
 .mt-0 { 
     margin-top: 0;
+}
+.mr-10 {
+    margin-right: 10px;
 }
 .mr-15 {
     margin-right: 15px;
@@ -60,6 +92,9 @@
 /* Start position */
 .p-relative { 
     position: relative;
+}
+.w-full { 
+    width: 100%;
 }
 /* End position */
 

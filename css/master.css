@@ -5,6 +5,15 @@
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;  
 }
+:root { 
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --gray-color: #888;
+    --maintrans: 0.4s;
+}
 body { 
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -30,8 +39,6 @@ ul {
     .page .sidebar {
         width: 60px;
     }
-}
-@media (max-width: 767px) {
     .page .sidebar h3 {
         font-size: 8px;
         margin-left: -10px;
@@ -45,8 +52,8 @@ ul {
     .page .sidebar h6 {
         font-size: 4px;
     }
-    .page .sidebar li { 
-        width: 30%;
+    .page .sidebar li a { 
+        display: block;
     }
 }
 .page .sidebar h3::before { 
@@ -70,6 +77,21 @@ ul {
     background-color: white;
     border: 2px black solid;
 }
+.page .sidebar h3:hover::after { 
+    animation: downup 1s linear infinite both;
+    ;
+}
+@keyframes downup { 
+    0% { 
+        bottom: -20px;
+    }
+    50% { 
+        bottom: -10px;
+    }
+    100% { 
+        bottom: -24px;
+    }
+}
 .page .sidebar h6 a:hover { 
     color: blue;
     text-decoration: underline;
@@ -83,3 +105,57 @@ ul {
     color: blue;
 }
 /* End sidebar */
+/* Start content */
+.page .content { 
+    overflow: hidden;
+}
+.page .content .search span i { 
+    position: absolute;
+    font-weight: 900;
+    top: 50%;
+    left: 20px;
+    font-size: 13px;
+    color: var(--gray-color);
+    transform: translateY(-50%);
+}
+.page .content .head .search input { 
+    border: 1px solid var(--blue-color);
+    margin-left: 5px;
+    padding-left: 35px;
+    width: 315px;
+    transition: var(--maintrans);
+}
+@media (max-width: 767px) { 
+    .page .content .head .search input { 
+        width: 120px;
+    }
+}
+.page .content .head input:focus { 
+    width: 400px;
+    border: 1px solid var(--gray-color);
+}
+@media (max-width: 767px) { 
+    .page .content .head input:focus { 
+        width: 200px;
+    } 
+}
+.page .content .head input:focus::placeholder { 
+    opacity: 0;
+}
+.page .content .head .icons span::before { 
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    left: 55%;
+}
+.page .content .head .icons span:hover::before { 
+    display: none;
+}
+.page .icons img {
+    width: 32px;
+    height: 32px;
+}
+/* End content */
