@@ -247,6 +247,11 @@ ul {
     border-top: 1px solid var(--gray-color);
     border-bottom: 1px solid var(--gray-color);
 }
+@media (min-width: 992px) { 
+    .page .content .holder .welcome .secound { 
+        margin-top: 120px;
+    }
+}
 .profilepic img { 
     width: 88px;
     position: absolute;
@@ -270,7 +275,7 @@ ul {
     right: 22px;
     bottom: 22px;
 }
-a:hover { 
+a.back:hover { 
     background-color: var(--blue-alt-color);
 }
 /* End Welcome */
@@ -392,3 +397,87 @@ a:hover {
     }
 }
 /* End News */
+/* Start Task */
+@media (max-width:767px) { 
+    .tasks .task .info h3,
+    .tasks .task .info p { 
+        text-align: initial;
+    }
+}
+/* End Task */
+/* Start uploads */
+.uploads .img img { 
+    width: 50px;
+}
+/* End uploads */
+/* Start project */
+.project .box ul::before { 
+    content: "";
+    position: absolute;
+    height: 79%;
+    width: 9px;
+    background-color: var(--blue-alt-color);
+    left: -3px;
+    top: 32px;
+}
+.project .box ul li::before { 
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green-color);
+    left: -20px;
+    top: 20px;
+    z-index: 1;
+    border: 2px solid var(--blue-alt-color);
+}
+.project .box ul li.empty::before {
+    background-color: white;
+}
+.project .box ul li.flash::before { 
+    animation: flashing 1s infinite linear;
+}
+@keyframes flashing {
+    50% {
+        background-color: white;
+    }
+}
+/* End project */
+/* Start Reminders */
+.reminders .holder .box::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 3px;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.reminders .holder .box::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: -33px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.reminders .holder .blue::before, 
+.reminders .holder .blue::after { 
+    background-color: var(--blue-color);
+}
+.reminders .holder .green::before, 
+.reminders .holder .green::after { 
+    background-color: var(--green-color);
+}
+.reminders .holder .orange::before, 
+.reminders .holder .orange::after { 
+    background-color: var(--orange-color);
+}
+.reminders .holder .red::before, 
+.reminders .holder .red::after { 
+    background-color: var(--red-color);
+}
+/* End Reminders */

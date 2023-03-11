@@ -12,7 +12,10 @@
 - Main h1 for each page
 - Scrollbar width, tracka and thumb
 - Fixed ul on sidebar
-- 
+- Using 'initial' 
+- Animation using in pusdo elements
+-  
+-  
 // Next updates: 
 - Reatouch with JS
 - 

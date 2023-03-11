@@ -7,6 +7,9 @@
 .minheg350 { 
     min-height: 350px;
 }
+.tt-upper { 
+    text-transform: uppercase;
+}
 
 
 /* Start Box */
@@ -97,6 +100,9 @@
 .pr-15 {
     padding-right: 15px;
 }
+.pr-20 {
+    padding-right: 20px;
+}
 .pb-10 { 
     padding-bottom: 10px;
 }
@@ -126,6 +132,9 @@
 }
 .mr-15 {
     margin-right: 15px;
+}
+.mr-20 {
+    margin-right: 20px;
 }
 .mb-0 { 
     margin-bottom: 0;
@@ -210,13 +219,16 @@
     color: white;
 }
 .c-red { 
-    color: red;
+    color: var(--red-color);
 }
 .c-blue { 
     color: var(--blue-color);
 }
 .c-grey { 
     color: var(--gray-color);
+}
+.c-grey2 { 
+    color: #bcbcbca2;
 }
 .bg-black { 
     background-color: black;
@@ -225,7 +237,10 @@
     background-color: white;
 }
 .bg-red { 
-    background-color: red;
+    background-color: var(--red-color);
+}
+.bg-grey { 
+    background-color: var(--gray-color);
 }
 .bg-ccc { 
     background-color: #cccccc7d;
