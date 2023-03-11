@@ -1,12 +1,20 @@
 .cur-pointer { 
     cursor: pointer;
 }
-
+.z-m1 { 
+    z-index: -1;
+}
+.minheg350 { 
+    min-height: 350px;
+}
 
 
 /* Start Box */
 .d-flex { 
     display: flex;
+}
+.flex-column { 
+    flex-direction: column;
 }
 .align-center { 
     align-items: center;
@@ -14,8 +22,14 @@
 .space-between {
     justify-content: space-between;
 }
+.justify-center {
+    justify-content: center;
+}
 .flex-wrap { 
     flex-wrap: wrap;
+}
+.flex-1 { 
+    flex: 1;
 }
 .d-grid { 
     display: grid;
@@ -40,6 +54,11 @@
     align-items: center;
     justify-content: space-between;
 }
+.center-flex { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* End compon */
 /* Start Root */
 :root { 
@@ -55,6 +74,7 @@
 
 
 
+
 /* Start Padding and Margin */
 .p-10 { 
     padding: 10px;
@@ -65,11 +85,20 @@
 .p-20 { 
     padding: 20px;
 }
+.pt-10 { 
+    padding-top: 10px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
 .pr-10 {
     padding-right: 10px;
 }
 .pr-15 {
     padding-right: 15px;
+}
+.pb-10 { 
+    padding-bottom: 10px;
 }
 .m-0 { 
     margin: 0px;
@@ -85,6 +114,9 @@
 }
 .mt-0 { 
     margin-top: 0;
+}
+.mt-5 { 
+    margin-top: 5px;
 }
 .mt-10 { 
     margin-top: 10px;
@@ -114,6 +146,9 @@
     .txt-c-mobile { 
         text-align: center;
     }
+}
+.fw-bold { 
+    font-weight: bold;
 }
 
 
@@ -145,12 +180,15 @@
 .w-full { 
     width: 100%;
 }
+.w-fit { 
+    width: fit-content;
+}
 /* End position */
 
 
 /* Start bordar */
 .inp-bor { 
-    border: 1px solid var(--orange-color);
+    border: 1px solid var(--gray-color);
 }
 .rad-6 { 
     border-radius: 6px;
@@ -173,6 +211,12 @@
 }
 .c-red { 
     color: red;
+}
+.c-blue { 
+    color: var(--blue-color);
+}
+.c-grey { 
+    color: var(--gray-color);
 }
 .bg-black { 
     background-color: black;
