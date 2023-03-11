@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title> Setting </title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white c-black p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0 mb-20 fs-14"> Dashboard </h3>
+            <h6 class="mt-0 txt-c fs-8"><a class="c-black" href="https://github.com/HelalAbood" target="_blank" title="Github" >By Helal Abdalla</a></h6>
+            <ul class="p-fixed">
+                <li title="Home ">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 mb-10 rad-6" href="index.html">
+                        <i class="fa-solid fa-chart-pie fa-fw mr-10"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li title="Setting">
+                    <a class="active txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="setting.html">
+                        <i class="fa-solid fa-gears fa-fw mr-15"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li title="Profile">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="profile.html">
+                        <i class="fa-regular fa-id-card fa-fw mr-15"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li title="Projects">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw mr-15"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li title="Courses">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="courses.html">
+                        <i class="fa-brands fa-discourse fa-fw mr-15"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li title="Friends">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw mr-15"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li title="Files">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="files.html">
+                        <i class="fa-solid fa-file fa-fw mr-15"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li title="Plans">
+                    <a class="txt-c d-flex align-center fs-10 c-black p-10 rad-6" href="plans.html">
+                        <i class="fa-brands fa-pagelines fa-fw mr-15"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head -->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search">
+                    <span class="p-relative cur-pointer"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="p-10 rad-6" type="search" placeholder="Search For Something Here">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="noti p-relative p-10 cur-pointer">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img class="mr-10" src="imgs/avatar.png" alt="avatarPic">
+                </div>
+            </div>
+            <!-- End Head -->
+            <h1 class="mainh p-relative">Settings</h1>
+            <!-- Start Settings Page -->
+            <div class="settings-page holder m-20 d-grid gap-20">
+                <!-- Start Settings BOX Site Control-->
+                <div class="p-20 bg-white rad-15">
+                    <h3 class="mb-10 mt-0 fw-bold ">Site control</h3>
+                    <p class="mt-0 mr-20 c-grey fw-bold ">Take the control under the website</p>
+                    <div class="control between-flex mb-15 mt-20 p-10">
+                        <div class="text">
+                            <h3 class="mb-0 mt-0">Website control</h3>
+                            <p class="mt-0 c-grey">Take the control under the website</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="w-full bg-ccc p-10 mt-10 inp-bor minheg250" placeholder="Drop A New Idea"></textarea>
+                </div>
+                <!-- End Settings BOX -->
+                <!-- Start Settings BOX General Info -->
+                <div class="general p-20 bg-white rad-15">
+                    <h3 class="mb-10 mt-0 fw-bold ">General Information</h3>
+                    <p class="mt-0 mr-20 c-grey fw-bold ">General information about your account</p>
+                    <div class="content">
+                        <label class="p-relative">
+                            <p class="mb-10 fs-14 c-grey">First Name</p>
+                            <input class="w-full p-10 inp-bor" type="text" placeholder="First Name">
+                            <p class="mt-20 mb-10 fs-14 c-grey">Last Name</p>
+                            <input class="w-full p-10 inp-bor" type="text" placeholder="Last Name">
+                            <p class="mt-20 mb-10 fs-14 c-grey">Email</p>
+                            <input class="w-80 p-10 inp-bor bg-grey fs-`0" type="email" placeholder="Email">
+                            <a href="index.html" class="back p-10 c-blue fs-14 ml-30">Send</a>
+                        </label>
+                    </div>
+                </div>
+                <!-- Start Settings BOX  -->
+                <div class="security p-20 bg-white rad-15">
+                <h3 class="mb-10 mt-0 fw-bold ">Security Information</h3>
+                <p class="mt-0 mr-20 c-grey fw-bold ">Security information about your account</p>
+                    <div class="boxz p-10">
+                        <div class="change between-flex">
+                            <div class="info">
+                                <h4 class="mb-10 mt-0 fw-bold ">Password</h4>
+                                <p class="mt-0 mr-20 c-grey fw-bold ">Last change was 22.02.2020 at 05:22</p>
+                            </div>
+                            <a href="index.html" class="back p-10 bg-blue c-white rad-6 fs-14 ml-30">Change</a>            
+                        </div>
+                        <div class="change between-flex">
+                            <div class="info">
+                                <h4 class="mb-10 mt-0 fw-bold ">Two-Factor Autherntication</h4>
+                                <p class="mt-0 mr-20 c-grey fw-bold ">Enable or Disable</p>
+                            </div>
+                            <div class="enable">
+                                <label>
+                                    <input class="toggle-checkbox" type="checkbox" checked>
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="change between-flex">
+                            <div class="info">
+                                <h4 class="mb-10 mt-0 fw-bold ">Devices</h4>
+                                <p class="mt-0 mr-20 c-grey fw-bold ">Check the login devices list</p>
+                            </div>
+                            <a href="index.html" class="back p-10 bg-grey c-white rad-6 fs-14 ml-30">devices</a>            
+                        </div>
+                    </div>
+                </div>
+                <!-- Start Settings BOX  -->
+                <div class="social-info p-20 bg-white rad-15">
+                    <h3 class="mb-10 mt-0 fw-bold ">Social Info</h3>
+                    <p class="mt-0 mr-20 mb-20 c-grey fw-bold ">Social information about your account</p>
+                    <div class="box d-block mb-15">
+                        <div class="mb-15">
+                            <i class="fa-brands fa-twitter center-flex c-grey fs-20"></i>
+                            <input class="w-80" type="text" placeholder="Twitter Username">
+                        </div>
+                        <div class="mb-15">
+                            <i class="fa-brands fa-facebook center-flex c-grey fs-20"></i>
+                            <input class="w-80" type="text" placeholder="Facebook Username">
+                        </div>
+                        <div class="mb-15">
+                            <i class="fa-brands fa-linkedin center-flex c-grey fs-20"></i>
+                            <input class="w-80 " type="text" placeholder="Linkedin Username">
+                        </div>
+                        <div class="mb-15">
+                            <i class="fa-brands fa-youtube center-flex c-grey fs-20"></i>
+                            <input class="w-80" type="text" placeholder="Youtube account">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <!-- End Setting Page -->
+        </div>
+    </div>
+</body>
+</html>
