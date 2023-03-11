@@ -481,3 +481,22 @@ a.back:hover {
     background-color: var(--red-color);
 }
 /* End Reminders */
+/* Start Post */
+.post .poster .border{ 
+    border-top: 2px solid var(--gray-color);
+    border-bottom: 2px solid var(--gray-color);
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.post .onepost .img img { 
+    width: 40px;
+}
+.post .poster .redhover:hover {
+    color: red;
+}
+/* End Post */
+/* Start social */
+.social .info i { 
+    font-size: 50px;
+}
+/* End social */
