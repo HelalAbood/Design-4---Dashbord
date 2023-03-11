@@ -11,7 +11,7 @@
     --orange-color: #f59e0b;
     --green-color: #22c55e;
     --red-color: #f44336;
-    --gray-color: #888;
+    --gray-color: #d1d0d0c4;
     --maintrans: 0.4s;
 }
 body { 
@@ -25,13 +25,25 @@ ul {
     list-style: none;
     padding: 0;
 }
+::-webkit-scrollbar { 
+    width: 14px;
+}
+::-webkit-scrollbar-track { 
+    background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb { 
+    background-color: white;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--red-color); 
+}
 /* End Global Rules */
 /* Start sidebar */
 .page { 
     background-color: #cfcfcc65;
 }
 .page .sidebar { 
-    width: 220px;
+    width: 180px;
     box-shadow: 0 0 10px #ddd;
     min-height: 100vh;
 }
@@ -54,6 +66,7 @@ ul {
     }
     .page .sidebar li a { 
         display: block;
+        padding-right: 23px;
     }
 }
 .page .sidebar h3::before { 
@@ -70,7 +83,7 @@ ul {
     position: absolute;
     width: 10px;
     height: 10px;
-    bottom: -20px;
+    bottom: -19px;
     border-radius: 50%;
     left: 50%;
     transform: translatex(-50%);
@@ -93,17 +106,15 @@ ul {
     }
 }
 .page .sidebar h6 a:hover { 
-    color: blue;
     text-decoration: underline;
+    color: var(--blue-color);
 }
 .page .sidebar li a:hover,
 .page .sidebar li a.active {
-    background-color: #cfcfcc65;
+    background-color: var(--blue-alt-color);
+    color: white;
 }
-.page .sidebar li a:hover span { 
-    text-decoration: underline;
-    color: blue;
-}
+
 /* End sidebar */
 /* Start content */
 .page .content { 
@@ -119,7 +130,7 @@ ul {
     transform: translateY(-50%);
 }
 .page .content .head .search input { 
-    border: 1px solid var(--blue-color);
+    border: 1px solid var(--gray-color);
     margin-left: 5px;
     padding-left: 35px;
     width: 315px;
@@ -132,7 +143,8 @@ ul {
 }
 .page .content .head input:focus { 
     width: 400px;
-    border: 1px solid var(--gray-color);
+    border: 1px solid var(--red-color);
+    outline: none;
 }
 @media (max-width: 767px) { 
     .page .content .head input:focus { 
@@ -159,3 +171,100 @@ ul {
     height: 32px;
 }
 /* End content */
+.page .mainh { 
+    margin: 10px 0 20px 15px;
+}
+.page .mainh::before { 
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+    left: 0;
+}
+.page .mainh::after { 
+    content: "";
+    position: absolute;
+    width: calc(170px / 5);
+    height: 3px;
+    background-color: var(--red-color);
+    bottom: -10px;
+    left: 0;
+}
+
+/* Start holder */
+.page .holder { 
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width: 767px) {
+    .page .holder { 
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+}
+
+/* End holder */
+
+/* Start Welcome */
+
+.page .content .holder .welcome .first{ 
+    z-index: 1;
+    overflow: hidden;
+}
+.page .content .holder .welcome .first::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 15px;
+    z-index: -1;
+    left: -100%;
+    top: 0;
+    transition: var(--maintrans);
+}
+.page .content .holder .welcome .first:hover{ 
+    color: white;
+}
+.page .content .holder .welcome .first:hover::before {
+    left: 0;
+}
+.page .content .holder .welcome .secound {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+.profilepic img { 
+    width: 88px;
+    position: absolute;
+    left: 6%;
+    top: 37%;
+    z-index: 1;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+.welcome .text textarea { 
+    height: 120px;
+}
+.welcome .text textarea:focus,
+.welcome .text input:focus {
+    outline: none;
+    border: 1px solid var(--blue-color);
+}
+.welcome .text textarea:focus::placeholder,
+.welcome .text input:focus::placeholder {
+    opacity: 0;
+}
+.draft a { 
+    position: absolute;
+    right: 15px;
+    bottom: -50px;
+}
+a:hover { 
+    background-color: var(--blue-alt-color);
+}
+/* End Welcome */

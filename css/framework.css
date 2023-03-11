@@ -1,3 +1,7 @@
+.cur-pointer { 
+    cursor: pointer;
+}
+
 
 
 /* Start Box */
@@ -7,8 +11,28 @@
 .align-center { 
     align-items: center;
 }
-
+.space-between {
+    justify-content: space-between;
+}
+.flex-wrap { 
+    flex-wrap: wrap;
+}
+.d-grid { 
+    display: grid;
+}
+.gap-20 { 
+    gap:20px;
+}
+.d-block { 
+    display: block;
+}
+@media (max-width: 767px) { 
+    .block-mobile { 
+        display: block;
+    }
+}
 /* End Box */
+
 
 /* Start compon */
 .between-flex { 
@@ -17,7 +41,7 @@
     justify-content: space-between;
 }
 /* End compon */
-
+/* Start Root */
 :root { 
     --blue-color: #0075ff;
     --blue-alt-color: #0d69d5;
@@ -26,10 +50,10 @@
     --red-color: #f44336;
     --gray-color: #888;
 }
+/* End Root */
 
-.cur-pointer { 
-    cursor: pointer;
-}
+
+
 
 /* Start Padding and Margin */
 .p-10 { 
@@ -47,6 +71,12 @@
 .pr-15 {
     padding-right: 15px;
 }
+.m-0 { 
+    margin: 0px;
+}
+.m-5 { 
+    margin: 5px;
+}
 .m-10 { 
     margin: 10px;
 }
@@ -55,6 +85,9 @@
 }
 .mt-0 { 
     margin-top: 0;
+}
+.mt-10 { 
+    margin-top: 10px;
 }
 .mr-10 {
     margin-right: 10px;
@@ -65,6 +98,9 @@
 .mb-0 { 
     margin-bottom: 0;
 }
+.mb-10 { 
+    margin-bottom: 10px;
+}
 .mb-20 { 
     margin-bottom: 20px;
 }
@@ -74,17 +110,27 @@
 .txt-c { 
     text-align: center;
 }
-.fs-14 { 
-    font-size: 14px;
+@media (max-width: 767px) { 
+    .txt-c-mobile { 
+        text-align: center;
+    }
 }
-.fs-12 { 
-    font-size: 12px;
+
+
+.fs-8 { 
+    font-size: 8px;
 }
 .fs-10 { 
     font-size: 10px;
 }
-.fs-8 { 
-    font-size: 8px;
+.fs-12 { 
+    font-size: 12px;
+}
+.fs-14 { 
+    font-size: 14px;
+}
+.fs-20 { 
+    font-size: 20px;
 }
 /* End font */
 
@@ -93,6 +139,9 @@
 .p-relative { 
     position: relative;
 }
+.p-fixed { 
+    position:fixed;
+}
 .w-full { 
     width: 100%;
 }
@@ -100,8 +149,14 @@
 
 
 /* Start bordar */
+.inp-bor { 
+    border: 1px solid var(--orange-color);
+}
 .rad-6 { 
     border-radius: 6px;
+}
+.rad-15 { 
+    border-radius: 15px;
 }
 .rad-50 { 
     border-radius: 50%;
@@ -127,5 +182,11 @@
 }
 .bg-red { 
     background-color: red;
+}
+.bg-ccc { 
+    background-color: #cccccc7d;
+}
+.bg-blue { 
+    background-color: var(--blue-color);
 }
 /* End Background */
