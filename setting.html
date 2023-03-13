@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <title> Setting </title>
+    <title>Setting Page</title>
 </head>
 <body>
     <div class="page d-flex">
@@ -176,7 +176,71 @@
                             <input class="w-80" type="text" placeholder="Youtube account">
                         </div>
                     </div>
+                </div>
+                <!-- Start Settings BOX  -->
+                <div class="widgets p-20 bg-white rad-15">
+                    <h3 class="mb-10 mt-0 fw-bold ">Widgets Control On Website</h3>
+                    <p class="mt-0 mr-20 mb-20 c-grey fw-bold ">Show or hide whatever you want</p>
+                    <form  class="p-10" action="index.html">
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="quick" checked class="">
+                            <label for="quick">Quick Draft</label>
+                        </div>
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="targets" checked class="">
+                            <label for="targets">Yearly Targets</label>
+                        </div>
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="anything" class="">
+                            <label for="anything">Anything else</label>
+                        </div>
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="updates" class="">
+                            <label for="updates">Automatic Updates</label>
+                        </div>
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="search" checked class="">
+                            <label for="search">Top Search</label>
+                        </div>
+                        <div class="onecheck mb-20 p-10">
+                            <input type="checkbox" id="news" class="">
+                            <label for="news">Latest News</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- Start Settings BOX -->
+                <div class="Backup p-20 bg-white rad-15">
+                    <h3 class="mb-10 mt-0 fw-bold ">Backup Manager</h3>
+                    <p class="mt-0 mr-20 mb-20 c-grey fw-bold ">Control Backup Time As You Like</p>
+                    <div class="holder">
+                        <div class="d-flex align-center mb-15">
+                            <input id="daily" type="radio">
+                            <label for="daily" class="cur-pointer">Daily</label>
+                        </div>
+                        <div class="d-flex align-center mb-15">
+                            <input id="week" type="radio">
+                            <label for="week" class="cur-pointer">Weekly</label>
+                        </div>
+                        <div class="d-flex align-center mb-15 ">
+                            <input id="month" type="radio">
+                            <label for="month" class="cur-pointer">Monthly</label>
+                        </div>
+                        <div class="box p-10 d-flex mt-20">
+                            <div class="touchme p-10 w-fit rad-6 inp-bor txt-c mr-20 cur-pointer">
+                                <i class="fa-regular fa-hand-back-fist mr-10"></i>
+                                <p class="fs-14 p-0 m-0">Mega BackUp</p>
+                            </div>
+                            <div class="touchme p-10 w-fit rad-6 inp-bor txt-c mr-20 cur-pointer">
+                                <i class="fa-brands fa-blackberry mr-10"></i>
+                                <p class="fs-14 p-0 m-0">Without BackUp</p>
+                            </div>
+                            <div class="touchme p-10 w-fit rad-6 inp-bor txt-c cur-pointer">
+                                <i class="fa-solid fa-arrow-up-from-bracket mr-10"></i>
+                                <p class="fs-14 p-0 m-0">Sigma BackUp</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
             </div>
             <!-- End Setting Page -->
         </div>

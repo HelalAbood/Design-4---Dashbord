@@ -592,4 +592,8 @@ a.back:hover {
     color: var(--blue-color);
 }
 /* End Social-info */
+.touchme:hover { 
+    border: 1px solid var(--blue-alt-color);
+    color: var(--blue-alt-color);
+}
                     /* END SETTINGS */
