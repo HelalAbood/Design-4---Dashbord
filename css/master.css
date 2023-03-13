@@ -652,3 +652,38 @@ a.back:hover {
 }
 /* End Activities */
                     /* END PROFILE */
+                    /* START PROJECT */
+/* Start Project-page */
+.project-page.holder { 
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width: 767px) {
+    .project-page.holder { 
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 10px;
+    }
+}
+.project-page .helpers a img { 
+    width: 40px;
+    filter: grayscale(0);
+    transition: var(--maintrans);
+    margin-left: -10px;
+}
+.project-page .helpers a:hover img {
+    filter: grayscale(100);
+    transform: translatey(-10px) rotate(1turn);
+
+}
+.project-page .attri span:hover { 
+    color: white;
+    background-color: var(--blue-color);
+}
+@media (max-width: 767px) { 
+    .project-page .attri span { 
+        font-size: 8px;
+    }
+}
+/* End Project-page */
+                    /* END PROJECT */

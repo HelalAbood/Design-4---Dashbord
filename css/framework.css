@@ -31,6 +31,9 @@
 .justify-center {
     justify-content: center;
 }
+.justify-end {
+    justify-content: end;
+}
 .flex-wrap { 
     flex-wrap: wrap;
 }
@@ -139,6 +142,9 @@
 .mt-20 { 
     margin-top: 20px;
 }
+.mr-5 {
+    margin-right: 5px;
+}
 .mr-10 {
     margin-right: 10px;
 }
@@ -177,6 +183,7 @@
         text-align: center;
     }
 }
+
 .fw-bold { 
     font-weight: bold;
 }

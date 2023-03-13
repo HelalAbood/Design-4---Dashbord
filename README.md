@@ -16,6 +16,7 @@
 - Animation using in pusdo elements
 - Toggle-checkbox & toggle-switch
 - Focus-within
+- Resizing the grid system on special pages 
 
 
 // Next updates: 
