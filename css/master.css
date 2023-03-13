@@ -794,6 +794,13 @@ a.back:hover {
     margin-left: 20px;
     margin-right: 10px;
 }
+@media (max-width: 767px) {
+    .plans-page.holder { 
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 10px;
+    }
+ 
+}
 .plans-page .header p::before {
     content: "\24";
     font-family: var(--fa-style-family-classic);
@@ -822,4 +829,13 @@ a.back:hover {
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .plans-page  .main-content ul li::before {
+        width: 10px;
+        height: 10px;
+        font-size: 8px;
+        padding: 3px;
+    }
+}
+
                     /* End Plans */
