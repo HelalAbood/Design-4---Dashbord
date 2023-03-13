@@ -85,6 +85,9 @@
 
 
 /* Start Padding and Margin */
+.p-5 { 
+    padding: 5px;
+}
 .p-10 { 
     padding: 10px;
 }
@@ -157,6 +160,9 @@
 .mb-20 { 
     margin-bottom: 20px;
 }
+.ml-0 { 
+    margin-left: 0px;
+}
 .ml-30 { 
     margin-left: 30px;
 }
@@ -213,12 +219,18 @@
 .w-fit { 
     width: fit-content;
 }
+.h-fit { 
+    height: fit-content;
+}
 /* End position */
 
 
 /* Start bordar */
 .inp-bor { 
     border: 1px solid var(--gray-color);
+}
+.bor-bot { 
+    border-bottom: 1px solid var(--gray-color);
 }
 .rad-6 { 
     border-radius: 6px;
@@ -251,6 +263,9 @@
 .c-grey2 { 
     color: #bcbcbca2;
 }
+.c-orange { 
+    color: var(--orange-color);
+}
 .bg-black { 
     background-color: black;
 }
@@ -262,6 +277,9 @@
 }
 .bg-grey { 
     background-color: var(--gray-color);
+}
+.bg-grey2 { 
+    background-color: #bcbcbca2;
 }
 .bg-green { 
     background-color: var(--green-color);

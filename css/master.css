@@ -558,13 +558,20 @@ a.back:hover {
     opacity: 0;
 }
 .general .content a { 
+    padding: 7px;
     border: 1px solid;
+}
+@media (min-width: 767px) {
+    .general .content a { 
+        position: absolute;
+        right: -68px;
+        bottom: -9px;
+    }
 }
 @media (max-width: 767px) {
     .general .content a { 
         position: absolute;
         right: -51px;
-        padding: 7px;
         bottom: -8px;
     }
 }
@@ -597,3 +604,51 @@ a.back:hover {
     color: var(--blue-alt-color);
 }
                     /* END SETTINGS */
+
+
+                    /* START PROFILE */
+/* Start Main-Cont */
+
+.main-con .left { 
+    border-right: 1px solid var(--gray-color);
+}
+@media (max-width: 992px) { 
+    .main-con .left { 
+        border-right: none;
+        border-bottom: 1px solid var(--gray-color);
+    }
+}
+.main-con .left img { 
+    width: 80px;
+}
+.main-con .right .firstline .conttt {
+    margin-top: -10px;
+    border-bottom: 1px solid var(--gray-color);
+}
+.main-con .right .firstline .conttt.without {
+    border-bottom: none;
+}
+@media (max-width: 992px) { 
+    .main-con { 
+        flex-direction: column;
+    }
+
+    .main-con .right .conttt  {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+    .main-con .right h3 { 
+        margin-bottom: 20px;
+    }
+    .main-con { 
+        text-align: center;
+    }
+}
+/* End Main-Cont */
+/* Start Activities */
+.activities .holder img { 
+    width: 55px;
+}
+/* End Activities */
+                    /* END PROFILE */
