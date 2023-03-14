@@ -20,8 +20,5 @@
 
 
 // Next updates: 
-- Reatouch with JS
-- 
-- 
-- 
-- 
+- Retouching with JS
+ 
