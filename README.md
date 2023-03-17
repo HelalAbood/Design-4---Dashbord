@@ -2,6 +2,12 @@
 
 # Demo: https://helalabood.github.io/Design-4-Dashboard/
 
+### Screenshot
+
+About The Project
+![Desktop](./screenshot.jpg)
+![Mobile](./mobile-design.jpg)
+
 ## What's new over this design: 
         ###### Font-Family
         'Open Sans', sans-serif
