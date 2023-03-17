@@ -769,6 +769,11 @@ a.back:hover {
     top: 50%;
     transform: translatey(-50%);
 }
+@media (max-width: 767px) { 
+    .friends-page .vip::before { 
+        font-size: 55px; 
+    }
+}
                     /* END FRIENDS */
                     /* Start Files */
 .files-page.holder { 
